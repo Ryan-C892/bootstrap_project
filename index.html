@@ -1,0 +1,2048 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bootstrap Project</title>
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/083e2fef0b.js" crossorigin="anonymous"></script>
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    </head>
+    <body style="background:#d9d9d9;">
+        <div id="top">
+            <header class="container page-header">
+                <div class="row">
+                    <div class="col-6 col-md-4 header-top d-flex justify-content-start align-items-end">
+                        <div>
+                            <date class="date">Mon, Jun 14, 2021</date>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 header-middle">
+                        <a href="#" class="logo">
+                            <svg width="396" height="60" x="0px" y="0px" viewBox="0 0 396 60">
+                                <g>
+                                    <path d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 header-end d-flex justify-content-end align-items-end">
+                        <div>
+                            <button class="login">LOGIN</button>
+                            <button class="subscribe">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- NAVIGATION -->
+                <nav class="d-flex flex-column">
+                    <div class="d-flex justify-content-between">
+                        <form action="#" class="search order-2" method="get">
+                            <div class="container-inline">
+                                <div class="search-form">
+                                    <label for="#" class="search-icon">Search</label>
+                                    <input type="text" placeholder="Search" value="" size="15" maxlength="128">
+                                </div>
+                            </div>
+                        </form>
+                        <ul class="page-nav d-flex justify-content-center order-1">
+                            <li class="nav-item"><a href="#">U.S.</a></li>
+                            <li class="nav-item"><a href="#">World</a></li>
+                            <li class="nav-item"><a href="#">Business</a></li>
+                            <li class="nav-item"><a href="#">Tech & Science</a></li>
+                            <li class="nav-item"><a href="#">Culture</a></li>
+                            <li class="nav-item"><a href="#">Newsgeek</a></li>
+                            <li class="nav-item"><a href="#">Sports</a></li>
+                            <li class="nav-item"><a href="#">Health</a></li>
+                            <li class="nav-item"><a href="#">Opinion</a></li>
+                            <li class="nav-item"><a href="#">Experts</a></li>
+                            <li class="nav-item"><a href="#">Education</a></li>
+                        </ul>
+                    </div>
+                    <div class="trending-wrapper d-flex">
+                        <ul class="trending-topics d-flex">
+                            <li><strong>Trending</strong></li>
+                            <li>Joe Biden</li>
+                            <li>Donald Trump</li>
+                            <li>Coronavirus</li>
+                            <li>Vaccine</li>
+                            <li>Gavin Newsom</li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <!-- MAIN -->
+        <main id="main" class="container container-fluid">
+            <!-- CONTAINER -->
+            <div class="container">
+                <!-- ROW -->
+                <div class="row justify-content-md-center">
+                    <!-- COLUMN -->
+                    <div class="col-3">
+                        <div id="sticky1">
+                            <!-- FEATURED STORIES -->
+                            <div id="featured-stories" class="d-block">
+                                <div class="block-title">FEATURED STORIES</div>
+                                <article>
+                                    <div class="wrap">
+                                        <div class="category">
+                                            <a href="#">News</a>
+                                        </div>
+                                        <div class="image">
+                                            <picture width="397" height="295">
+                                                <img src="https://d.newsweek.com/en/full/1820534/nato-secretary-general-speaks-summit.jpg?w=397&amp;h=265&amp;q=90&amp;f=4171756eb542ef9bfee2a2a98c1501cf" alt="" width="397" height="265">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <h3>
+                                        <a href="#">Cyberthreats from Russia, China Main Concerns for Allies at NATO Summit</a>
+                                    </h3>
+                                    <div class="summary">
+                                        One expected order of business is a revision of the NATO charter to include cyberattacks among the actions that would prompt a collective response from the alliance's member nations.
+                                    </div>
+                                    <div class="related">
+                                        <div>
+                                            <a href="#">NATO Places China Firmly in Its Sights As Joe Biden Strengthens Alliance</a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article>
+                                    <div class="wrap">
+                                        <div class="category">
+                                            <a href="#">U.S.</a>
+                                        </div>
+                                        <div class="image">
+                                            <picture class="mapping-sm_md" width="397" height="295">
+                                                <img src="https://d.newsweek.com/en/full/1820567/mcconnell-unlikely-gop-advance-biden-scotus-pick.jpg?w=397&amp;h=265&amp;q=90&amp;f=ef0e3440e2577462acffb66d993b5af0" alt="" class="mapping-sm_md" width="397" height="265">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <h3>
+                                        <a href="#">McConnell: 'Highly Unlikely' GOP Majority Selects Biden SCOTUS Pick in 2024</a>
+                                    </h3>
+                                    <div class="summary">
+                                        "Well, we'd have to wait and see what happens," McConnell said when asked if a GOP-controlled Senate would advance a Biden Supreme Court pick in 2023.
+                                    </div>
+                                </article>
+                                <article>
+                                    <div class="wrap">
+                                        <div class="category">
+                                            <a href="#">World</a>
+                                        </div>
+                                        <div class="image">
+                                            <picture class="mapping-sm_md" width="397" height="295">
+                                                <img src="https://d.newsweek.com/en/full/1820258/naftali-bennett-addresses-lawmakers-knesset.jpg?w=397&amp;h=265&amp;q=90&amp;f=053414eb39afeebd82188a577a53abf8" alt="" class="mapping-sm_md" width="397" height="265">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <h3>
+                                        <a href="#">Naftali Bennett's Rise Sees Israel Shift Even Further Right</a>
+                                    </h3>
+                                    <div class="summary">
+                                        Israel's new Prime Minister Naftali Bennett once described himself as being "more right-wing" than his predecessor Benjamin Netanyahu.
+                                    </div>
+                                </article>
+                                <article>
+                                    <div class="wrap">
+                                        <div class="category">
+                                            <a href="#">U.S.</a>
+                                        </div>
+                                        <div class="image">
+                                            <picture class="mapping-sm_md" width="397" height="295">
+                                                <img src="https://d.newsweek.com/en/full/1820519/russia-china-us-war-biden-putin.jpg?w=397&amp;h=265&amp;q=90&amp;f=caed8dbcc8132ca45570116e997f5376" alt="" class="mapping-sm_md" width="397" height="265">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <h3>
+                                        <a href="#">Russian Official Warns China-U.S. Conflict Would 'Exterminate All Mankind'</a>
+                                    </h3>
+                                    <div class="summary">
+                                        Russian Ambassador to China Andrey Denisov is "convinced" a war will not break out, but it would have massive casualties if it did.
+                                    </div>
+                                </article>
+                                <article>
+                                    <div class="wrap">
+                                        <div class="category">
+                                            <a href="#">Politics</a>
+                                        </div>
+                                        <div class="image">
+                                            <picture class="mapping-sm_md" width="397" height="295">
+                                                <img src="https://d.newsweek.com/en/full/1820252/mike-pence-harris.jpg?w=397&amp;h=265&amp;q=90&amp;f=2eb56e7a051a6744d76a2602674eec38" alt="" class="mapping-sm_md" width="397" height="265">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <h3>
+                                        <a href="#">Mike Pence Tells Kamala Harris 'It's Time' to Visit Southern Border</a>
+                                    </h3>
+                                    <div class="summary">
+                                        Donald Trump's former VP criticized Harris while tweeting images of him visiting the border during his time in the office.
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- SPONSORS -->
+                            <div id="sponsor-item1" class="d-block sponsor-item">
+                                <div class="content">
+                                    <div class="sponsor">
+                                        <div class="wrap">
+                                            <div class="category">SPONSORED INSIGHT</div>
+                                        </div>
+                                        <div class="info">
+                                            <h3>
+                                                <a href="#">Malta: Live and Work in the Pearl of the Mediterranean</a>
+                                            </h3>
+                                            <div class="summary">
+                                                With new citizenship and residency by investment programs plus an upcoming digital nomad residence permit, find out why the stunning island nation is the destination of choice for global investors, entrepreneurs and remote workers.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="sponsor-item2" class="d-block sponsor-item">
+                                <div class="content">
+                                    <div class="sponsor">
+                                        <div class="wrap">
+                                            <div class="category">RANKINGS</div>
+                                        </div>
+                                        <div class="info">
+                                            <h3>
+                                                <a href="#">World's Best Smart Hospitals 2021</a>
+                                            </h3>
+                                            <div class="summary">
+                                                Newsweek has partnered with Statista to develop a list of 250 hospitals that best avail themselves of the most advanced technologies.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="sponsor-item3" class="d-block sponsor-item">
+                                <div class="content">
+                                    <div class="sponsor">
+                                        <div class="wrap">
+                                            <div class="category">SPONSORED INSIGHT</div>
+                                        </div>
+                                        <div class="info">
+                                            <h3>
+                                                <a href="#">Do You Want to Help in the Fight Against Cyber Crime?</a>
+                                            </h3>
+                                            <div class="summary">
+                                                Most of us have been hacked, phished or scammed, and it’s going to get worse. Do you want to be a part of the solution?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="sponsor-item4" class="d-block sponsor-item">
+                                <div class="content">
+                                    <div class="sponsor">
+                                        <div class="wrap">
+                                            <div class="category">SPONSORED INSIGHT</div>
+                                        </div>
+                                        <div class="info">
+                                            <h3>
+                                                <a href="#">The Best Education Starts with a Leading University</a>
+                                            </h3>
+                                            <div class="summary">
+                                                Good universities are built from the ground up by visionaries who can articulate and adhere to a strict ethos of academic excellence. Where can they be found around the globe?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="sponsor-item5" class="d-block sponsor-item">
+                                <div class="content">
+                                    <div class="sponsor">
+                                        <div class="wrap">
+                                            <div class="category">RANKINGS</div>
+                                        </div>
+                                        <div class="info">
+                                            <h3>
+                                                <a href="#">The Best Credit Cards of 2021</a>
+                                            </h3>
+                                            <div class="summary">
+                                                Credit card companies pumped up their rewards to keep consumers spending during the pandemic. Newsweek's first card ranking will help you pick your best offer.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="sponsor-item6" class="d-block sponsor-item">
+                                <div class="content">
+                                    <div class="sponsor">
+                                        <div class="wrap">
+                                            <div class="category">SURVEY</div>
+                                        </div>
+                                        <div class="info">
+                                            <h3>
+                                                <a href="#">Best Physical Rehab Centers 2021</a>
+                                            </h3>
+                                            <div class="summary">
+                                                Newsweek is partnering with Statista Inc. to establish a ranking of America's Best Physical Rehab Centers 2021. Join us and take part in this survey.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="sponsor-item7" class="d-block sponsor-item">
+                                <div class="content">
+                                    <div class="sponsor">
+                                        <div class="wrap">
+                                            <div class="category">SPONSORED INSIGHT</div>
+                                        </div>
+                                        <div class="info">
+                                            <h3>
+                                                <a href="#">Meet the Tiny New Engine That's Reinventing Propulsion</a>
+                                            </h3>
+                                            <div class="summary">
+                                                LiquidPiston's X-Engine is up to 10x smaller and lighter and 30% more efficient than traditional combustion engines.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- COLUMN -->
+                    <div class="col-5">
+                        <div id="sticky2">
+                            <!-- TOP STORY -->
+                            <div id="featured-stories-middle" class="d-block">
+                                <div class="block-title">TOP STORY</div>
+                                <article>
+                                    <div class="wrap">
+                                        <div class="category">
+                                            <a href="#">World</a>
+                                        </div>
+                                        <div class="image">
+                                            <picture width="591" height="364">
+                                                <img src="https://d.newsweek.com/en/full/1820476/president-putin-opens-monument-alexander-iii.jpg?w=591&amp;h=364&amp;f=517c3abba3163d8a0740053025b77768" alt="" width="591" height="364">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <h3>
+                                        <a href="#"> Vladimir Putin Fears Cyberattack From U.S., NATO Planning Against Russia </a>
+                                    </h3>
+                                    <div class="summary">
+                                        The Russian President will meet Joe Biden at a crunch summit in Geneva, Switzerland. The Ukraine, as well as jailed Kremlin critic Alexei Navalny, will be on the agenda.
+                                    </div>
+                                    <div id="featured-related" class="d-block">
+                                        <article>
+                                            <div class="image">
+                                                <picture width="95" height="95">
+                                                    <img src="https://d.newsweek.com/en/full/1820411/putin-biden-trump-navalny-interview-nbc-news.jpg?w=95&amp;h=95&amp;l=36&amp;t=40&amp;f=8014b780bec70683285790621f539e67" alt="" loading="lazy" width="95" height="95">
+                                                </picture>
+                                            </div>
+                                            <h4>
+                                                <a href="#">5 Takeaways From Vladimir Putin's NBC News Interview</a>
+                                            </h4>
+                                            <div class="summary">
+                                                During a 90-minute interview, NBC News senior international correspondent Keir Simmons asked the longest-serving Russian leader since Joseph Stalin about the state of dissent in his country, the conflict with the U.S. and his thoughts on Alexei Navalny.
+                                            </div>
+                                        </article>
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- STORY-ITEMS -->
+                            <div class="story-item-container order-2">
+                                <div class="block-title">MY TURN</div>
+                                <div class="story-item-list d-flex">
+                                    <div class="story-item">
+                                        <div class="image">
+                                            <picture width="397" height="397">
+                                                <img src="https://d.newsweek.com/en/full/1819204/kenneth-john-denver-botanic-gardens.jpg?w=397&amp;h=397&amp;f=92a1a3968d8e02747e1dbd15d7db8ddb" alt="" width="397" height="397">
+                                            </picture>
+                                        </div>
+                                        <div class="info">
+                                            <a href="#">'I Found Love At 90 With A 31-Year-Old—After Finally Coming Out'</a>
+                                        </div>
+                                    </div>
+                                    <div class="story-item">
+                                        <div class="image">
+                                            <picture width="397" height="397">
+                                                <img src="https://d.newsweek.com/en/full/1817881/chocolate-cicadas-made-sarah-dwyer.png?w=397&amp;h=397&amp;f=5002e694e5849834c5fa96d214a6d838" alt="" width="397" height="397">
+                                            </picture>
+                                        </div>
+                                        <div class="info">
+                                            <a href="#">'I'm Selling Chocolate Covered Cicadas—People Are Swarming to Buy Them'</a>
+                                        </div>
+                                    </div>
+                                    <div class="story-item">
+                                        <div class="image">
+                                            <picture width="397" height="397">
+                                                <img src="https://d.newsweek.com/en/full/1817463/caroline-andrew-her-mayfair-store.jpg?w=397&amp;h=397&amp;f=eddfe22fa1ae44c43c6bcdbc26f09b3b" alt="" width="397" height="397">
+                                            </picture>
+                                        </div>
+                                        <div class="info">
+                                            <a href="#">'I'm a Female Tailor—Men Told Me Not To Waste My Time'</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="block-title">CULTURE & TRAVEL</div>
+                                <div class="story-item-list d-flex">
+                                    <div class="story-item">
+                                        <div class="image">
+                                            <picture width="397" height="397">
+                                                <img data-src="https://d.newsweek.com/en/full/1804037/cul-map-ufo-banner-1249064147.jpg?w=397&amp;h=397&amp;l=47&amp;t=50&amp;f=11e4ac255483c264f7801ea3f1cb5066" alt="" class="mapping-mobile lazysize lazyloaded" src="https://d.newsweek.com/en/full/1804037/cul-map-ufo-banner-1249064147.jpg?w=397&amp;h=397&amp;l=47&amp;t=50&amp;f=11e4ac255483c264f7801ea3f1cb5066" width="397" height="397">
+                                            </picture>
+                                            <div class="tags">
+                                                <a href="#">UFOs</a>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <a href="#">Far Out Sightings: Where UFOs May Have Been Spotted</a>
+                                        </div>
+                                    </div>
+                                    <div class="story-item">
+                                        <div class="image">
+                                            <picture width="397" height="397">
+                                                <img data-src="https://d.newsweek.com/en/full/1806691/portland.jpg?w=397&amp;h=397&amp;f=c2f1c897d82d75aa26c3da0d979a325d" alt="" class="mapping-mobile lazysize lazyloaded" src="https://d.newsweek.com/en/full/1806691/portland.jpg?w=397&amp;h=397&amp;f=c2f1c897d82d75aa26c3da0d979a325d" width="397" height="397">
+                                            </picture>
+                                            <div class="tags">
+                                                <a href="#">Movies</a>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <a href="#">25 Movies That Take You on a Tour of a City</a>
+                                        </div>
+                                    </div>
+                                    <div class="story-item">
+                                        <div class="image">
+                                            <picture width="397" height="397">
+                                                <img data-src="https://d.newsweek.com/en/full/1791530/cul-map-abandoned-banner.jpg?w=397&amp;h=397&amp;l=25&amp;t=48&amp;f=df3b555b320bcfcdde201cc48a1a98d5" alt="" class="mapping-mobile lazysize lazyloaded" src="https://d.newsweek.com/en/full/1791530/cul-map-abandoned-banner.jpg?w=397&amp;h=397&amp;l=25&amp;t=48&amp;f=df3b555b320bcfcdde201cc48a1a98d5" width="397" height="397">
+                                            </picture>
+                                            <div class="tags">
+                                                <a href="#">Travel</a>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <a href="#">The Coolest Abandoned Places Around the World</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- MORE -->
+                            <div id="featured-more" class="d-block order-3">
+                                <div>
+                                    <div class="block-title">MORE STORIES</div>
+                                    <article class="clearfix">
+                                        <div class="image">
+                                            <picture class="mapping-sm_thumb lazyside" width="95" height="95">
+                                                <img data-src="https://d.newsweek.com/en/full/1820311/donald-trump.jpg?w=95&amp;h=95&amp;f=328bb09ca6959dbd5e218805c621ed94" alt="" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820311/donald-trump.jpg?w=95&amp;h=95&amp;f=328bb09ca6959dbd5e218805c621ed94" width="95" height="95">
+                                            </picture>
+                                        </div>
+                                        <h4>
+                                            <a href="#">Donald Trump Birthday Wishes Flood in as People Honor 'Best President'</a>
+                                        </h4>
+                                        <div class="summary">
+                                            "Happy Birthday Mr. President" trended on Twitter as the former president's supporters shared numerous birthday messages, despite the fact he's unlikely to see them following his Twitter ban.
+                                        </div>
+                                    </article>
+                                    <article class="clearfix">
+                                        <div class="image">
+                                            <picture class="mapping-sm_thumb lazyside" width="95" height="95">
+                                                <img data-src="https://d.newsweek.com/en/full/1820460/firefighter-wildfire.jpg?w=95&amp;h=95&amp;f=ce2087e87c4aee12a1a183095c06d2dc" alt="" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820460/firefighter-wildfire.jpg?w=95&amp;h=95&amp;f=ce2087e87c4aee12a1a183095c06d2dc" width="95" height="95">
+                                            </picture>
+                                        </div>
+                                        <h4>
+                                            <a href="#">As Telegraph Wildfire Rages, Residents Urged to Abandon Their Homes</a>
+                                        </h4>
+                                        <div class="summary">
+                                            Evacuations are being ordered in Arizona as wildfires continue to scorch the state.
+                                        </div>
+                                    </article>
+                                    <article class="clearfix">
+                                        <div class="image">
+                                            <picture class="mapping-sm_thumb lazyside" width="95" height="95">
+                                                <img data-src="https://d.newsweek.com/en/full/1820394/us-supreme-court.jpg?w=95&amp;h=95&amp;f=fc4718310a9084f66fdd4ec3c8a8d174" alt="" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820394/us-supreme-court.jpg?w=95&amp;h=95&amp;f=fc4718310a9084f66fdd4ec3c8a8d174" width="95" height="95">
+                                            </picture>
+                                        </div>
+                                        <h4>
+                                            <a href="#">SCOTUS Delays Harvard Race Discrimination Case, Asks DOJ to Weigh in</a>
+                                        </h4>
+                                        <div class="summary">
+                                            "It would be a big deal because of the nature of college admissions across the country and because of the stakes of having this issue before the Supreme Court," U.S. lawyer Gregory Garre said.
+                                        </div>
+                                    </article>
+                                    <article class="clearfix">
+                                        <div class="image">
+                                            <picture class="mapping-sm_thumb lazyside" width="95" height="95">
+                                                <img data-src="https://d.newsweek.com/en/full/1820368/novavax-vaccine.jpg?w=95&amp;h=95&amp;f=799814b7e8906a306d83ffd3100e7a8b" alt="" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820368/novavax-vaccine.jpg?w=95&amp;h=95&amp;f=799814b7e8906a306d83ffd3100e7a8b" width="95" height="95">
+                                            </picture>
+                                        </div>
+                                        <h4>
+                                            <a href="#">Novavax's COVID-19 Shot Found Effective Against Some Virus Variants</a>
+                                        </h4>
+                                        <div class="summary">
+                                            The company says it plans to seek authorization for the shots in the U.S., Europe and elsewhere by the end of September and be able to produce up to 100 million doses a month by then.
+                                        </div>
+                                    </article>
+                                    <article class="clearfix">
+                                        <div class="image">
+                                            <picture class="mapping-sm_thumb lazyside" width="95" height="95">
+                                                <img data-src="https://d.newsweek.com/en/full/1820401/california-braces-record-breaking-heat-wave.jpg?w=95&amp;h=95&amp;f=a630b23420885aa0d2cf325fb244bc6f" alt="" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820401/california-braces-record-breaking-heat-wave.jpg?w=95&amp;h=95&amp;f=a630b23420885aa0d2cf325fb244bc6f" width="95" height="95">
+                                            </picture>
+                                        </div>
+                                        <h4>
+                                            <a href="#">California Braces for Heat Wave as Four Fires Already Rage in State</a>
+                                        </h4>
+                                        <div class="summary">
+                                            There are currently four active wildfires of interest in the state—the Beale Fire, the Goose Fire, the Flats Fire and the Farm Fire—according to the California Department of Forestry and Fire Protection.
+                                        </div>
+                                    </article>
+                                    <article class="clearfix">
+                                        <div class="image">
+                                            <picture class="mapping-sm_thumb lazyside" width="95" height="95">
+                                                <img data-src="https://d.newsweek.com/en/full/1820373/japans-prime-minister-yoshihide-suga.jpg?w=95&amp;h=95&amp;f=ce2bf37c4a9963bf9f9963be24557ac7" alt="" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820373/japans-prime-minister-yoshihide-suga.jpg?w=95&amp;h=95&amp;f=ce2bf37c4a9963bf9f9963be24557ac7" width="95" height="95">
+                                            </picture>
+                                        </div>
+                                        <h4>
+                                            <a href="#">Yoshihide Suga 'Determined' to Make Olympics a Success 'at any Cost'</a>
+                                        </h4>
+                                        <div class="summary">
+                                            "I'm feeling reassured by the firm support I received from all the other leaders. I have renewed my determination to make the Tokyo Games a success at any cost," Yoshihide Suga said.
+                                        </div>
+                                    </article>
+                                    <article class="clearfix">
+                                        <div class="image">
+                                            <picture class="mapping-sm_thumb lazyside" width="95" height="95">
+                                                <img data-src="https://d.newsweek.com/en/full/1820328/myanmar-protesters.jpg?w=95&amp;h=95&amp;f=f6a7967d2093e048ea7e2af0fe8a8697" alt="" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820328/myanmar-protesters.jpg?w=95&amp;h=95&amp;f=f6a7967d2093e048ea7e2af0fe8a8697" width="95" height="95">
+                                            </picture>
+                                        </div>
+                                        <h4>
+                                            <a href="#">Human Rights Group Dismisses Trial Against Myanmar's Suu Kyi as 'Bogus'</a>
+                                        </h4>
+                                        <div class="summary">
+                                            "This trial is clearly the opening salvo in an overall strategy to neuter Suu Kyi and the National League for Democracy party as a force that can challenge military rule in the future," the deputy Asia director for Human Rights Watch said.
+                                        </div>
+                                    </article>
+                                    <article class="clearfix">
+                                        <div class="image">
+                                            <picture class="mapping-sm_thumb lazyside" width="95" height="95">
+                                                <img data-src="https://d.newsweek.com/en/full/1820363/netanyahu-knesset-new-government-approval.jpg?w=95&amp;h=95&amp;f=cf515d2b28bd690074731f27d5d977e8" alt="" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820363/netanyahu-knesset-new-government-approval.jpg?w=95&amp;h=95&amp;f=cf515d2b28bd690074731f27d5d977e8" width="95" height="95">
+                                            </picture>
+                                        </div>
+                                        <h4>
+                                            <a href="#">Netanyahu Won't Give 'the Slightest Legitimacy' to New Govt, Lawmaker Says</a>
+                                        </h4>
+                                        <div class="summary">
+                                            Naftali Bennett took over as Prime Minister in Israel after ousting Benjamin Netanyahu. The Sunday election ended Netanyahu's 12-year rule with a close vote of 60-59 in Knesset. Bennett was sworn in late Sunday and in two years Foreign Minister Yair Lapid will take over as prime minister.
+                                        </div>
+                                    </article>
+                                    <article class="clearfix">
+                                        <div class="image">
+                                            <picture class="mapping-sm_thumb lazyside" width="95" height="95">
+                                                <img data-src="https://d.newsweek.com/en/full/1820406/nicaragua-protests.jpg?w=95&amp;h=95&amp;f=3e053ce32c5f44b42703cc232bd7da9a" alt="" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820406/nicaragua-protests.jpg?w=95&amp;h=95&amp;f=3e053ce32c5f44b42703cc232bd7da9a" width="95" height="95">
+                                            </picture>
+                                        </div>
+                                        <h4>
+                                            <a href="#">Nicaraguan Dissenter Declares Govt a 'Dictatorship' Shortly Before Arrest</a>
+                                        </h4>
+                                        <div class="summary">
+                                            The Nicaraguan police have arrested dissenters and opposing politicians in an attempt by the president to jail those who may oppose his rule.
+                                        </div>
+                                    </article>
+                                    <article class="clearfix">
+                                        <div class="image">
+                                            <picture class="mapping-sm_thumb lazyside" width="95" height="95">
+                                                <img data-src="https://d.newsweek.com/en/full/1820380/nato-considerations.jpg?w=95&amp;h=95&amp;f=08b10cb4868645ab1d391dba09a1b2f8" alt="" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820380/nato-considerations.jpg?w=95&amp;h=95&amp;f=08b10cb4868645ab1d391dba09a1b2f8" width="95" height="95">
+                                            </picture>
+                                        </div>
+                                        <h4>
+                                            <a href="#">Vladimir Putin Warns Ukraine That Joining NATO is Unacceptable</a>
+                                        </h4>
+                                        <div class="summary">
+                                            Russian President Vladimir Putin said that it would be unacceptable if Ukraine joined NATO. The longtime leader warned that NATO missiles would be able to reach key Russian targets in just seven minutes if Ukraine joined the organization
+                                        </div>
+                                    </article>
+                                    <article class="clearfix">
+                                        <div class="image">
+                                            <picture class="mapping-sm_thumb lazyside" width="95" height="95">
+                                                <img data-src="https://d.newsweek.com/en/full/1820324/house-judiciary-committee-hears-testimony-fbi.jpg?w=95&amp;h=95&amp;f=bad5282dbfb85a0c2af3116d5e81a0d4" alt="" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820324/house-judiciary-committee-hears-testimony-fbi.jpg?w=95&amp;h=95&amp;f=bad5282dbfb85a0c2af3116d5e81a0d4" width="95" height="95">
+                                            </picture>
+                                        </div>
+                                        <h4>
+                                            <a href="#">Matt Gaetz Slams 'Bibi Hatred,' Predicts Netanyahu Return</a>
+                                        </h4>
+                                        <div class="summary">
+                                            The Florida lawmaker appeared to make a comparison with the possibility of Donald Trump coming back to re-run as president in 2024.
+                                        </div>
+                                    </article>
+                                    <article class="clearfix">
+                                        <div class="image">
+                                            <picture class="mapping-sm_thumb lazyside" width="95" height="95">
+                                                <img data-src="https://d.newsweek.com/en/full/1820184/sahara-desert.jpg?w=95&amp;h=95&amp;f=84391882ba74b1f8e0c479fa0929020a" alt="" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820184/sahara-desert.jpg?w=95&amp;h=95&amp;f=84391882ba74b1f8e0c479fa0929020a" width="95" height="95">
+                                            </picture>
+                                        </div>
+                                        <h4>
+                                            <a href="#">Florida Set For Incredible Orange Skies As Saharan Dust Cloud Approaches</a>
+                                        </h4>
+                                        <div class="summary">
+                                            The phenomenon is set to bring picturesque sunrises and sunsets to the region with more pronounced orange, red and pink hues resulting from light scattering off the dust particles.
+                                        </div>
+                                    </article>
+                                </div>
+                                <!--MORE STORIES-->
+                                <div style="margin-top:30px;">
+                                    <div class="feature2">
+                                        <div class="block-title">Latest stories</div>
+                                        <article class="clear-fix">
+                                            <div class="image">
+                                                <picture class="mapping-sm_thumb lazyside" width="95" height="95">
+                                                    <img src="https://d.newsweek.com/en/full/1820809/fatou.jpg?w=95&amp;h=95&amp;f=3108f9f11c494e816ae83203b3062adc" alt="" class="mapping-sm_thumb lazysize lazyloaded" width="95" height="95">
+                                                </picture>
+                                            </div>
+                                            <h4>
+                                                <a href="#">Trump Crossed 'Red Line' with Sanctions: Outgoing ICC Prosecutor</a>
+                                            </h4>
+                                            <div class="summary">
+                                                Fatou Bensouda was slapped with sanctions by the Trump administration for her investigation into...
+                                            </div>
+                                        </article>
+                                        <article class="clear-fix">
+                                            <div class="image">
+                                                <picture class="mapping-sm_thumb lazyside" width="95" height="95">
+                                                    <img src="https://d.newsweek.com/en/full/1820777/mike-lindell.jpg?w=95&amp;h=95&amp;f=2f37c333906d61a75ee192ae7dfce5ae" alt="" class="mapping-sm_thumb lazysize lazyloaded" width="95" height="95">
+                                                </picture>
+                                            </div>
+                                            <h4>
+                                                <a href="#">Mike Lindell Invites Chinese Communist Party to 'Gladiator' Event</a>
+                                            </h4>
+                                            <div class="summary">
+                                                During a recent appearance on Real America's Voice, Lindell told Steve Bannon that he's planning on...
+                                            </div>
+                                        </article>
+                                        <article class="clear-fix">
+                                            <div class="image">
+                                                <picture class="mapping-sm_thumb lazyside" width="95" height="95">
+                                                    <img src="https://d.newsweek.com/en/full/1820773/philippine-president-rodrigo-duterte-vaccine-speech.jpg?w=95&amp;h=95&amp;f=0008b1d2eb36716be37c0a8b7df37bd8" alt="" class="mapping-sm_thumb lazysize lazyloaded" width="95" height="95">
+                                                </picture>
+                                            </div>
+                                            <h4>
+                                                <a href="#">Philippine Pres. Again Postpones Removing Country From U.S. Defense Pact</a>
+                                            </h4>
+                                            <div class="summary">
+                                                Philippine President Rodrigo Duterte has postponed his decision to withdraw from the defense...
+                                            </div>
+                                        </article>
+                                        <article class="clear-fix">
+                                            <div class="image">
+                                                <picture class="mapping-sm_thumb lazyside" width="95" height="95">
+                                                    <img src="https://d.newsweek.com/en/full/1820771/people-attend-showing-exorcist.jpg?w=95&amp;h=95&amp;f=320db94ac2a9fd1c0d2b8a1a7bf90a6d" alt="" class="mapping-sm_thumb lazysize lazyloaded" width="95" height="95">
+                                                </picture>
+                                            </div>
+                                            <h4>
+                                                <a href="#">Old Footage of People Walking Out of 'The Exorcist' Goes Viral</a>
+                                            </h4>
+                                            <div class="summary">
+                                                "We all left the theater shaken," one commenter who claimed to have seen the movie with several...
+                                            </div>
+                                        </article>
+                                        <article class="clear-fix">
+                                            <div class="image">
+                                                <picture class="mapping-sm_thumb lazyside" width="95" height="95">
+                                                    <img src="https://d.newsweek.com/en/full/1820769/california-disneyland-vaccine-incentive-lottery.jpg?w=95&amp;h=95&amp;f=a5f7017c6f923b719d47bcc268809dcd" alt="" class="mapping-sm_thumb lazysize lazyloaded" width="95" height="95">
+                                                </picture>
+                                            </div>
+                                            <h4>
+                                                <a href="#">California Ramps up Vaccine Incentives: Lakers Tickets, Disneyland Passes</a>
+                                            </h4>
+                                            <div class="summary">
+                                                Hotels and theme parks are providing these activities for free, so the state is throwing in an...
+                                            </div>
+                                        </article>
+                                        <article class="clear-fix">
+                                            <div class="image">
+                                                <picture class="mapping-sm_thumb lazyside" width="95" height="95">
+                                                    <img src="https://d.newsweek.com/en/full/1820762/paul-whelan.jpg?w=95&amp;h=95&amp;f=d0dd514a0ad46c45a8eab47080f2c9e5" alt="" class="mapping-sm_thumb lazysize lazyloaded" width="95" height="95">
+                                                </picture>
+                                            </div>
+                                            <h4>
+                                                <a href="#">U.S. Citizen Jailed in Russia Asks Biden to Negotiate Release With Putin</a>
+                                            </h4>
+                                            <div class="summary">
+                                                Paul Whelan, a U.S. citizen jailed in Russia since 2018 on espionage charges, released a statement...
+                                            </div>
+                                        </article>
+                                        <article class="clear-fix">
+                                            <div class="image">
+                                                <picture class="mapping-sm_thumb lazyside" width="95" height="95">
+                                                    <img src="https://d.newsweek.com/en/full/1820704/teigen-issues-lengthy-apology-addressing-resurfaced-tweets.jpg?w=95&amp;h=95&amp;f=34d5b7fb36eb6eeb23b34fea797dbf72" alt="" class="mapping-sm_thumb lazysize lazyloaded" width="95" height="95">
+                                                </picture>
+                                            </div>
+                                            <h4>
+                                                <a href="#">Chrissy Teigen Says She Is 'No Longer That Person' in Lengthy Apology</a>
+                                            </h4>
+                                            <div class="summary">
+                                                "There is simply no excuse for my past horrible tweets. My targets didn't deserve them. No one...
+                                            </div>
+                                        </article>
+                                        <article class="clear-fix">
+                                            <div class="image">
+                                                <picture class="mapping-sm_thumb lazyside" width="95" height="95">
+                                                    <img src="https://d.newsweek.com/en/full/1820707/erdogan-supporters.jpg?w=95&amp;h=95&amp;f=4f134f64b194da78d432e621389abcd4" alt="" class="mapping-sm_thumb lazysize lazyloaded" width="95" height="95">
+                                                </picture>
+                                            </div>
+                                            <h4>
+                                                <a href="#">Erdogan Disappointed Allies Have Not Supported Turkey's Terrorism Fight</a>
+                                            </h4>
+                                            <div class="summary">
+                                                "Turkey is on the frontline in the fight against terrorism in all relevant international platforms,...
+                                            </div>
+                                        </article>
+                                        <article class="clear-fix">
+                                            <div class="image">
+                                                <picture class="mapping-sm_thumb lazyside" width="95" height="95">
+                                                    <img src="https://d.newsweek.com/en/full/1820532/two-new-birds-discovered-tanzania.jpg?w=95&amp;h=95&amp;f=c9e8695f2c7757ffb178fc7b35c4d116" alt="" class="mapping-sm_thumb lazysize lazyloaded" width="95" height="95">
+                                                </picture>
+                                            </div>
+                                            <h4>
+                                                <a href="#">Two New Species of Birds Discovered Using Half-Century Old Specimens</a>
+                                            </h4>
+                                            <div class="summary">
+                                                A group of international researchers have named two new species of warblers with the help of...
+                                            </div>
+                                        </article>
+                                        <article class="clear-fix">
+                                            <div class="image">
+                                                <picture class="mapping-sm_thumb lazyside" width="95" height="95">
+                                                    <img src="https://d.newsweek.com/en/full/1820696/britains-prime-minister-boris-johnson.jpg?w=95&amp;h=95&amp;f=66a72ca500cd50bd2835f37b0340f813" alt="" class="mapping-sm_thumb lazysize lazyloaded" width="95" height="95">
+                                                </picture>
+                                            </div>
+                                            <h4>
+                                                <a href="#">U.K. COVID Restrictions Extended to Allow for More Vaccinations</a>
+                                            </h4>
+                                            <div class="summary">
+                                                "I think it is sensible to wait just a little longer," Prime Minister Boris Johnson said.
+                                            </div>
+                                        </article>
+                                        <article class="clear-fix">
+                                            <div class="image">
+                                                <picture class="mapping-sm_thumb lazyside" width="95" height="95">
+                                                    <img src="https://d.newsweek.com/en/full/1820688/plane-sunset.jpg?w=95&amp;h=95&amp;f=24fed1327bb5e0dc68e1ba5645ebb3e7" alt="" class="mapping-sm_thumb lazysize lazyloaded" width="95" height="95">
+                                                </picture>
+                                            </div>
+                                            <h4>
+                                                <a href="#">Passing Plane Drops Frozen Block of Poo Over Town, Shocking Residents</a>
+                                            </h4>
+                                            <div class="summary">
+                                                "We were just thankful no one was walking past," recalled one witness. "It could've killed someone."
+                                            </div>
+                                        </article>
+                                        <article class="clear-fix">
+                                            <div class="image">
+                                                <picture class="mapping-sm_thumb lazyside" width="95" height="95">
+                                                    <img src="https://d.newsweek.com/en/full/1820683/south-africa-jj-vaccines.jpg?w=95&amp;h=95&amp;f=f8a096b9caa9c1262ae297e201d9dc84" alt="" class="mapping-sm_thumb lazysize lazyloaded" width="95" height="95">
+                                                </picture>
+                                            </div>
+                                            <h4>
+                                                <a href="#">South Africa Rejects Second Batch of COVID-19 Vaccines, This Time From J&J</a>
+                                            </h4>
+                                            <div class="summary">
+                                                South Africa will discard about two million Johnson & Johnson vaccines after the U.S. FDA deemed...
+                                            </div>
+                                        </article>
+                                        <article class="clear-fix">
+                                            <div class="image">
+                                                <picture class="mapping-sm_thumb lazyside" width="95" height="95">
+                                                    <img src="https://d.newsweek.com/en/full/1820664/police-line.jpg?w=95&amp;h=95&amp;f=c55ff35d8b4c759c3acf5f018528d686" alt="" class="mapping-sm_thumb lazysize lazyloaded" width="95" height="95">
+                                                </picture>
+                                            </div>
+                                            <h4>
+                                                <a href="#">Illinois Chemical Plant Explosion Causes Massive Fire, Prompts Evacuations</a>
+                                            </h4>
+                                            <div class="summary">
+                                                In a statement issued by the Rockton Police Department, they said that Rockton Fire "has ordered a...
+                                            </div>
+                                        </article>
+                                        <article class="clear-fix">
+                                            <div class="image">
+                                                <picture class="mapping-sm_thumb lazyside" width="95" height="95">
+                                                    <img src="https://d.newsweek.com/en/full/1820687/tsa-gun-laguardia-found.jpg?w=95&amp;h=95&amp;f=fb089a35664c0ed72f334d6db60f4741" alt="" class="mapping-sm_thumb lazysize lazyloaded" width="95" height="95">
+                                                </picture>
+                                            </div>
+                                            <h4>
+                                                <a href="#">Passenger Claims He Was 'Unaware' of 50 Bullets in His Carry-On Bag</a>
+                                            </h4>
+                                            <div class="summary">
+                                                Ammunition is an unfortunately "common prohibited item," according to the TSA, and people attempt...
+                                            </div>
+                                        </article>
+                                        <article class="clear-fix">
+                                            <div class="image">
+                                                <picture class="mapping-sm_thumb lazyside" width="95" height="95">
+                                                    <img src="https://d.newsweek.com/en/full/1820450/keisha-young-assault.png?w=95&amp;h=95&amp;f=77f42d1ff745f848725683b0eccf7592" alt="" class="mapping-sm_thumb lazysize lazyloaded" width="95" height="95">
+                                                </picture>
+                                            </div>
+                                            <h4>
+                                                <a href="#">Black Woman Dragged Down Stairs of Bar in Viral Video Prompts Outrage</a>
+                                            </h4>
+                                            <div class="summary">
+                                                Keisha Young, 22, said she went to the bar to celebrate Pride festivities and was "dragged by the...
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- COLUMN -->
+                    <div class="col-4">
+                        <div id="sticky3">
+                            <!-- DEBATE -->
+                            <div class="debate-wrapper">
+                                <div class="debate">
+                                    <div class="block-title">THE DEBATE</div>
+                                    <div class="debate-item d-flex flex-column justify-content-right">
+                                        <div class="debate-item d-flex flex-row">
+                                            <div class="d-flex flex-row align-items-center">
+                                                <div class="image headshot order-1">
+                                                    <picture width="63" height="63">
+                                                        <img src="https://d.newsweek.com/en/full/111059/kevin-sabet.png?w=63&amp;h=63&amp;f=b13d277e8156634a8f6f5f67fc78930d" alt="" loading="lazy" width="63" height="63">
+                                                    </picture>
+                                                    <a href="#">Legalizing Pot Is a Catastrophic Mistake</a>
+                                                </div>
+                                                <div class="info order-2">
+                                                    <div class="title">
+                                                        <a href="#">Legalizing Pot Is a Catastrophic Mistake</a>
+                                                    </div>
+                                                    <div class="byline">
+                                                        <span>By</span>
+                                                        Kevin Sabet
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="deco">
+                                            <div class="versus">VS</div>
+                                        </div>
+                                        <div class="debate-item d-flex flex-row">
+                                            <div class="d-flex align-items-center">
+                                                <div class="image headshot order-2">
+                                                    <picture width="63" height="63" style="padding-bottom: 100%;">
+                                                        <img src="https://d.newsweek.com/en/full/1621698/major-neill-franklin-ret.png?w=63&amp;h=63&amp;f=c214ab0cdb521d7468f55b23aaaa720b" alt="" loading="lazy" width="63" height="63">
+                                                    </picture>
+                                                </div>
+                                                <div class="info order-1">
+                                                    <div class="title">
+                                                        <a href="#">Legalization Is the Only Way to Improve the Criminal Justice System</a>
+                                                    </div>
+                                                    <div class="byline">
+                                                        <span>By</span>
+                                                        Major Neill Franklin (Ret.)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- WEB PLAYER -->
+                            <div class="web-player-wrapper">
+                                <div class="web-player-thumbnail">
+                                    <img alt="Cover Image" class="thumbnail-background" src="https://content.production.cdn.art19.com/images/b6/a6/1d/02/b6a61d02-524e-4c63-a0c9-fa7cb1d1a8d2/4a4178e0f8bddc03a3878efa5018a3019014f60f6daf10b6ef077cf38013602a3c4d9b11a24a3a615fed383969ce310b19e34085431a2514a13f639fa6d62bbd.jpeg">
+                                    <div class="thumbnail-overlay"></div>
+                                </div>
+                                <div class="web-player-content">
+                                    <div class="web-player-logo">
+                                        <a href="#">
+                                            <img src="https://web-player.art19.com/assets/art19-logo-white-a9c407979c933935446958e4b2677e0c.png" alt="ART19" title="The Debate">
+                                        </a>
+                                    </div>
+                                    <div class="content-top d-flex flex-column">
+                                        <span>The Debate</span>
+                                        <span>Time to legalize marijuana?</span>
+                                    </div>
+                                    <div class="content-button">
+                                        <button class="play-toggle">
+                                            <i class="far fa-play-circle"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- OPINION -->
+                            <div id="opinion" class="d-block">
+                                <div class="block-title">OPINION</div>
+                                <ul class="d-flex flex-column">
+                                    
+                                    <li class="d-flex">
+                                        <div class="opinion-image">
+                                            <picture width="63" height="63">
+                                                <img src="https://d.newsweek.com/en/full/1813452/eric-costanzo.png?w=63&amp;h=63&amp;f=7144500c902e3fb7f7e1fd459ec53b36" alt="" loading="lazy" width="63" height="63">
+                                            </picture>
+                                        </div>
+                                        <div class="opinion-info">
+                                            <a class="opinion" href="/there-no-solitary-narrative-border-crisis-opinion-1599927">There Is No Solitary Narrative for the Border Crisis</a>
+                                            <div class="byline">By Eric Costanzo</div>
+                                        </div>
+                                    </li>
+
+                                    <li class="d-flex">
+                                        <div class="opinion-image">
+                                            <picture width="63" height="63">
+                                                <img src="https://d.newsweek.com/en/full/97976/robert-reich.png?w=63&amp;h=63&amp;f=297351a03eaa549128026042394c9580" alt="" loading="lazy" width="63" height="63">
+                                            </picture>
+                                        </div>
+                                        <div class="opinion-info">
+                                            <a class="opinion" href="/no-republicans-unemployment-benefits-arent-keeping-people-working-opinion-1600408">No, Republicans, Unemployment Benefits Aren't Keeping People From Working</a>
+                                            <div class="byline">By
+                                                <a href="/authors/robert-reich" rel="author" class="author-name">Robert Reich</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                        
+                                    <li class="d-flex">
+                                        <div class="opinion-image">
+                                            <picture width="63" height="63">
+                                                <img src="https://d.newsweek.com/en/full/89510/marc-schulman.png?w=63&amp;h=63&amp;f=0544ec46ee21c238aad07cc8eaa35569" alt="" loading="lazy" width="63" height="63">
+                                            </picture>
+                                        </div>
+                                        <div class="opinion-info">
+                                            <a class="opinion" href="/more-unites-parties-israels-new-government-divides-them-opinion-1600369">More Unites the Parties of Israel's New Government than Divides Them</a>
+                                            <div class="byline"> By
+                                                <a href="/authors/marc-schulman" rel="author" class="author-name">Marc Schulman</a>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="d-flex">
+                                        <div class="opinion-image">
+                                            <picture width="63" height="63">
+                                                <img src="https://d.newsweek.com/en/full/1819494/katey-lauer-rae-kelsch.png?w=63&amp;h=63&amp;f=b12e0330c0026130fa446877e342be92" alt="" loading="lazy" width="63" height="63">
+                                            </picture>
+                                        </div>
+                                        <div class="opinion-info">
+                                            <a class="opinion" href="/joe-manchins-game-opinion-1599911">Joe Manchin's Game</a>
+                                            <div class="byline"> By Katey Lauer and Rae Kelsch</div>
+                                        </div>
+                                    </li>
+
+                                    <li class="d-flex">
+                                        <div class="opinion-image">
+                                            <picture width="63" height="63">
+                                                <img src="https://d.newsweek.com/en/full/1815162/martin-skladany.png?w=63&amp;h=63&amp;f=cbda9a9f31d8c472f9b665153e3cafa3" alt="" loading="lazy" width="63" height="63">
+                                            </picture>
+                                        </div>
+                                        <div class="opinion-info">
+                                            <a class="opinion" href="/asylum-stay-not-flee-opinion-1599855">Asylum to Stay Not Flee</a>
+                                            <div class="byline"> By Martin Skladany</div>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="d-flex">
+                                        <div class="opinion-image">
+                                            <picture width="63" height="63">
+                                                <img src="https://d.newsweek.com/en/full/1815084/allegra-love.png?w=63&amp;h=63&amp;f=4f02cae73bd586b6c278b5e431fdc128" alt="" loading="lazy" width="63" height="63">
+                                            </picture>
+                                        </div>
+                                        <div class="opinion-info">
+                                            <a class="opinion" href="/past-100-days-biden-administration-detaining-more-immigrants-every-day-opinion-1599899">Past 100 Days, Biden Administration is Detaining More Immigrants Every Day</a>
+                                            <div class="byline"> By Allegra Love</div>
+                                        </div>
+                                    </li>
+
+                                    <li class="d-flex">
+                                        <div class="opinion-image">
+                                            <picture width="63" height="63">
+                                               <img src="https://d.newsweek.com/en/full/1812641/andrew-markquart.png?w=63&amp;h=63&amp;f=4536ea87b8cb70faed242479c3007be1" alt="" loading="lazy" width="63" height="63">
+                                            </picture>
+                                        </div>
+                                        <div class="opinion-info">
+                                            <a class="opinion" href="/president-biden-must-end-federal-death-penalty-opinion-1598620">President Biden Must End the Federal Death Penalty</a>
+                                            <div class="byline"> By Andrew Markquart</div>
+                                        </div>
+                                    </li>
+
+                                    <li class="d-flex">
+                                        <div class="opinion-image">
+                                            <picture width="63" height="63">
+                                                <img src="https://d.newsweek.com/en/full/1682816/smith-smith.png?w=63&amp;h=63&amp;f=1c5de9d173943496dee35133b5926846" alt="" loading="lazy" width="63" height="63">
+                                            </picture>
+                                        </div>
+                                        <div class="opinion-info">
+                                            <a class="opinion" href="/reimagining-k-12-education-after-covid-opinion-1597321">Reimagining K-12 Education After COVID</a>
+                                            <div class="byline"> By Sarah A. Morgan Smith and Brian A. Smith</div>
+                                        </div>
+                                    </li>
+
+                                    <li class="d-flex">
+                                        <div class="opinion-image">
+                                            <picture width="63" height="63">
+                                                <img src="https://d.newsweek.com/en/full/1806055/liz-wheeler.png?w=63&amp;h=63&amp;f=6e895afcba4e4bd6416a1c17b7398490" alt="" loading="lazy" width="63" height="63">
+                                            </picture>
+                                        </div>
+                                        <div class="opinion-info">
+                                            <a class="opinion" href="/critical-race-theory-repackaged-marxism-opinion-1599557">Critical Race Theory is Repackaged Marxism</a>
+                                            <div class="byline"> By Liz Wheeler</div>
+                                        </div>
+                                    </li>
+
+                                    <li class="d-flex">
+                                        <div class="opinion-image">
+                                            <picture width="63" height="63">
+                                                <img src="https://d.newsweek.com/en/full/1819591/ye-z-pogue.png?w=63&amp;h=63&amp;f=30829e9bd09558ebac789b062a5b6af0" alt="" loading="lazy" width="63" height="63">
+                                            </picture>
+                                        </div>
+                                        <div class="opinion-info">
+                                            <a class="opinion" href="/how-anti-racist-activism-affects-interracial-couples-like-us-opinion-1599970">How Anti-Racist Activism Affects Interracial Couples Like Us</a>
+                                            <div class="byline"> By Ye Zhang Pogue</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- AD -->
+                            <div class="advert">
+                                <picture>
+                                    <img src="https://d.newsweek.com/en/full/1771847/asp-banner.png?w=300&amp;f=eedd54aefef6f51801fb07d3737e0d91" alt="" loading="lazy" width="300">
+                                </picture>
+                            </div>
+                            <!-- SPOTLIGHT -->
+                            <div id="sponsor-item8" class="block block-ibtmedia-special-item">
+                                <div class="content">
+                                    <div class="sponsor">
+                                        <div class="wrap">
+                                            <div class="category">SPONSORED INSIGHT</div>
+                                        </div>
+                                        <div class="info">
+                                            <h3>
+                                                <a href="#">Ireland: New Dawn, New Opportunities</a>
+                                            </h3>
+                                            <div class="summary">
+                                                Having thrived under the double challenge of COVID-19 and Brexit, find out why Ireland's export-led entrepreneurs are expecting an even brighter future.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- NEWSLETTER -->
+                            <div class="newsletter-wrapper">
+                                <form action="#" class="free-signup">
+                                    <label for="email" class="signup-label d-flex align-items-center">
+                                        <span class="magazine-icon"></span>
+                                        Get the best of Newsweek via email
+                                    </label>
+                                    <input class="email-address" type="text" placeholder="Email address">
+                                    <input type="submit" class="form-submit" value="">
+                                </form>
+                            </div>
+                            <!-- SPOTLIGHT -->
+                            <div id="sponsor-item8" class="block block-ibtmedia-special-item">
+                                <div class="content">
+                                    <div class="sponsor">
+                                        <div class="wrap">
+                                            <div class="category">SPONSORED INSIGHT</div>
+                                        </div>
+                                        <div class="info">
+                                            <h3>
+                                                <a href="#">Which Business Schools are Rising to Today’s Challenges?</a>
+                                            </h3>
+                                            <div class="summary">
+                                                Technology is increasing collaborative opportunities in today’s business world. Which schools are adapting the best?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- SPOTLIGHT -->
+                            <div id="sponsor-item8" class="block block-ibtmedia-special-item">
+                                <div class="content">
+                                    <div class="sponsor">
+                                        <div class="wrap">
+                                            <div class="category">SPONSORED INSIGHT</div>
+                                        </div>
+                                        <div class="info">
+                                            <h3>
+                                                <a href="#">Searching For a Creative Career That Enables You to Make a Difference to People’s Lives Through Your Art or Designs?</a>
+                                            </h3>
+                                            <div class="summary">
+                                                A career in the arts or as an urban designer or an architect might be ideal for you. Which schools offer the best programs in these areas?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- SPOTLIGHT -->
+                            <div id="sponsor-item8" class="block block-ibtmedia-special-item">
+                                <div class="content">
+                                    <div class="sponsor">
+                                        <div class="wrap">
+                                            <div class="category">RANKINGS</div>
+                                        </div>
+                                        <div class="info">
+                                            <h3>
+                                                <a href="#">America's Most Trusted Brands</a>
+                                            </h3>
+                                            <div class="summary">
+                                                Newsweek has partnered with leading market research firm BrandSpark International for the second year to highlight the 2021 winners of the BrandSpark Most Trusted Awards for everyday consumer product brands.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- SPOTLIGHT -->
+                            <div id="sponsor-item8" class="block block-ibtmedia-special-item">
+                                <div class="content">
+                                    <div class="sponsor">
+                                        <div class="wrap">
+                                            <div class="category">SURVEY</div>
+                                        </div>
+                                        <div class="info">
+                                            <h3>
+                                                <a href="#">Best Addiction Treatment Centers 2021</a>
+                                            </h3>
+                                            <div class="summary">
+                                                Newsweek is partnering with Statista Inc. to establish a ranking of America's Best Addiction Treatment Centers 2021. Join us and take part in this survey.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- SPOTLIGHT -->
+                            <div id="sponsor-item8" class="block block-ibtmedia-special-item">
+                                <div class="content">
+                                    <div class="sponsor">
+                                        <div class="wrap">
+                                            <div class="category">SPONSORED ARTICLE</div>
+                                        </div>
+                                        <div class="info">
+                                            <h3>
+                                                <a href="#">These FDA-Cleared Anti-Viral Surgical and N95 Masks Kill COVID-19</a>
+                                            </h3>
+                                            <div class="summary">
+                                                Here's why RespoKare continues to be one of the Country's leading mask brands.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- Row End --> 
+            </div><!-- Container End -->
+            <!-- BOTTOM PAGE -->
+            <section id="bottom">
+                <!-- CONTAINER -->
+                <div class="container container-fluid">
+                    <!-- ROW -->
+                    <div class="row justify-content-md-center">
+                    <!-- MAGAZINE -->
+                    <div class="magazine">
+                        <div class="magazine-title d-flex justify-content-center align-items-center">
+                            <span class="magazine-icon"></span>
+                            <a href="#">IN THE MAGAZINE</a>
+                        </div>
+                        <!-- PAGE BOTTOM CONTENT -->
+                        <div class="mag-container d-flex align-items-end flex-row">
+                            <div class="d-flex flex-column">
+                                <div class="wrap">
+                                    <div class="image">
+                                        <picture width="360" height="480">
+                                            <img src="https://d.newsweek.com/en/full/1816683/cover-june-18-25-2021.jpg?w=360&amp;h=480&amp;q=90&amp;f=e73f5a5fb189adedefa61726373a2adc" alt="" class="magazine-img" width="360" height="480">
+                                            <a href="#" class="zero"></a>
+                                        </picture>
+                                        <div class="category">
+                                            <a href="#">JUNE 25 ISSUE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="mag-link">See All Features</a>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <div class="d-flex flex-row">
+                                    <aritcle class="col-sm-3 mag-col">
+                                        <div class="image">
+                                            <picture width="466" height="311">
+                                                <img data-src="https://d.newsweek.com/en/full/1814101/fe-chris-evans-05.jpg?w=466&amp;h=311&amp;l=77&amp;t=50&amp;q=90&amp;f=76012c11304ac98ff0626edb433f1496" alt="" class="mapping-tablet lazysize lazyloaded" src="https://d.newsweek.com/en/full/1814101/fe-chris-evans-05.jpg?w=466&amp;h=311&amp;l=77&amp;t=50&amp;q=90&amp;f=76012c11304ac98ff0626edb433f1496" width="466" height="311">
+                                            </picture>
+                                        </div>
+                                        <div class="category">
+                                            <span class="mag-category">COVER</span>
+                                            <span class="cat">POLITICS</span>
+                                        </div>
+                                        <h5>
+                                            <a href="#">
+                                                Chris Evans was Captain America. Now He's Helping Gen Z Reshape Politics
+                                            </a>
+                                        </h5>
+                                    </aritcle>
+                                    <aritcle class="col-sm-3 mag-col">
+                                        <div class="image">
+                                            <picture width="466" height="311">
+                                                <img data-src="https://d.newsweek.com/en/full/1814089/fe-chris-evans-01.jpg?w=466&amp;h=311&amp;l=41&amp;t=40&amp;q=90&amp;f=6a651e7ecf94c6d4dbe400dcc3330fdb" alt="" class="mapping-tablet lazysize lazyloaded" src="https://d.newsweek.com/en/full/1814089/fe-chris-evans-01.jpg?w=466&amp;h=311&amp;l=41&amp;t=40&amp;q=90&amp;f=6a651e7ecf94c6d4dbe400dcc3330fdb" width="466" height="311">
+                                            </picture>
+                                        </div>
+                                        <div class="category">
+                                            <span class="mag-category">FEATURES</span>
+                                            <span class="cat">POLITICS</span>
+                                        </div>
+                                        <h5>
+                                            <a href="#">
+                                                Chris Evans, Mark Kassen on Young Voters and "Famous People Interviews"
+                                            </a>
+                                        </h5>
+                                    </aritcle>
+                                    <aritcle class="col-sm-3 mag-col">
+                                        <div class="image">
+                                            <picture width="466" height="311">
+                                                <img data-src="https://d.newsweek.com/en/full/1788686/everything-liz-cheney-has-said-about-trump.jpg?w=466&amp;h=311&amp;q=90&amp;f=44167e0710a16e2f56e4f48263e7ec13" alt="" class="mapping-tablet lazysize lazyloaded" src="https://d.newsweek.com/en/full/1788686/everything-liz-cheney-has-said-about-trump.jpg?w=466&amp;h=311&amp;q=90&amp;f=44167e0710a16e2f56e4f48263e7ec13" width="466" height="311">
+                                            </picture>
+                                        </div>
+                                        <div class="category">
+                                            <span class="mag-category">PERISCOPE</span>
+                                            <span class="cat">POLITICS</span>
+                                        </div>
+                                        <h5>
+                                            <a href="#">
+                                                Liz Cheney's Ouster Makes a Third Political Party More Likely
+                                            </a>
+                                        </h5>
+                                    </aritcle>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ROW BOTTOM -->
+                        <div class="d-flex row bottom">
+                            <aritcle class="col-sm-3 mag-col">
+                                <div class="image">
+                                    <picture width="466" height="311">
+                                        <img data-src="https://d.newsweek.com/en/full/1816568/per-misinformation-1301752656.jpg?w=466&amp;h=311&amp;q=90&amp;f=87dcea057d4ba47d3297f9ce2d36ca96" alt="" class="mapping-tablet lazysize lazyloaded" src="https://d.newsweek.com/en/full/1816568/per-misinformation-1301752656.jpg?w=466&amp;h=311&amp;q=90&amp;f=87dcea057d4ba47d3297f9ce2d36ca96" width="466" height="311">
+                                    </picture>
+                                </div>
+                                <div class="category">
+                                    <span class="mag-category">PERISCOPE</span>
+                                    <span class="cat">CULTURE</span>
+                                </div>
+                                <h5>
+                                    <a href="#">
+                                        How a U.S. government database fuels dangerous vaccine misinformation
+                                    </a>
+                                </h5>
+                            </aritcle>
+                            <aritcle class="col-sm-3 mag-col">
+                                <div class="image">
+                                    <picture width="466" height="311">
+                                        <img data-src="https://d.newsweek.com/en/full/1816263/cul-liz-phair-01-519181644.jpg?w=466&amp;h=311&amp;q=90&amp;f=96411b429fb007f75675e4de0a4da5fc" alt="" class="mapping-tablet lazysize lazyloaded" src="https://d.newsweek.com/en/full/1816263/cul-liz-phair-01-519181644.jpg?w=466&amp;h=311&amp;q=90&amp;f=96411b429fb007f75675e4de0a4da5fc" width="466" height="311">
+                                    </picture>
+                                </div>
+                                <div class="category">
+                                    <span class="mag-category">DOWNTIME</span>
+                                    <span class="cat">CULTURE</span>
+                                </div>
+                                <h5>
+                                    <a href="#">
+                                        Liz Phair Gets Back in the Game
+                                    </a>
+                                </h5>
+                            </aritcle>
+                            <aritcle class="col-sm-3 mag-col">
+                                <div class="image">
+                                    <picture width="466" height="311">
+                                        <img data-src="https://d.newsweek.com/en/full/1814063/cul-ps-joseph-fiennes.jpg?w=466&amp;h=311&amp;l=38&amp;t=52&amp;q=90&amp;f=4a49922e637d2bce906729ea56b7dc16" alt="" class="mapping-tablet lazysize lazyloaded" src="https://d.newsweek.com/en/full/1814063/cul-ps-joseph-fiennes.jpg?w=466&amp;h=311&amp;l=38&amp;t=52&amp;q=90&amp;f=4a49922e637d2bce906729ea56b7dc16" width="466" height="311">
+                                    </picture>
+                                </div>
+                                <div class="category">
+                                    <span class="mag-category">DOWNTIME</span>
+                                    <span class="cat">CULTURE</span>
+                                </div>
+                                <h5>
+                                    <a href="#">
+                                        The Handmaid's Tale's Joseph Fiennes Says This Season the Most 'Expansive'
+                                    </a>
+                                </h5>
+                            </aritcle>
+                            <article class="col-sm-3 mag-col">
+                                <div class="mag-other">
+                                    <div class="wrap">
+                                        <div class="image">
+                                            <a href="#" class="cover"></a>
+                                            <picture width="480" height="320">
+                                                <img data-src="https://d.newsweek.com/en/full/1816549/jubilation.jpg?w=480&amp;h=320&amp;q=90&amp;f=d30c7f214cc8139f61b5ba57ce059ff6" alt="" class="mapping-mobile_sm lazysize lazyloaded" src="https://d.newsweek.com/en/full/1816549/jubilation.jpg?w=480&amp;h=320&amp;q=90&amp;f=d30c7f214cc8139f61b5ba57ce059ff6" width="480" height="320">
+                                            </picture>
+                                            <div class="category">IN FOCUS</div>
+                                        </div>
+                                        <h5 class="mag-title">
+                                            <a href="#">JUBILATION</a>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <!-- EDITOR PICK -->
+                    <div class="editor-picks">
+                        <div class="magazine-title d-flex justify-content-center align-items-center">
+                            <span class="magazine-icon"></span>
+                            <a href="#">EDITOR'S PICK</a>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col edit-col">
+                                    <div class="wrap">
+                                    <div class="image">
+                                        <picture width="397" height="295">
+                                            <img data-src="https://d.newsweek.com/en/full/1819187/covid-medical-debt.jpg?w=397&amp;h=295&amp;f=30d7e8285d7ac14119eedf0063f0c26f" alt="" class="mapping-sm_md lazysize lazyloaded" src="https://d.newsweek.com/en/full/1819187/covid-medical-debt.jpg?w=397&amp;h=295&amp;f=30d7e8285d7ac14119eedf0063f0c26f" width="397" height="295">
+                                        </picture>
+                                        <div class="category">
+                                            <a href="#">BANKRUPTCY</a>
+                                        </div>
+                                    </div>
+                                    <h3>
+                                        <a href="#">
+                                            Concerns Mount Over Looming Surge in Bankruptcy as COVID Medical Debt Soars
+                                        </a>
+                                    </h3>
+                                    <div class="summary">
+                                        A recent 30 percent increase in bankruptcies could be a harbinger of more financial pain to come as millions of Americans grapple with rising medical debt from COVID treatment. Says one expert: "It's going to get ugly."
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="col edit-col">
+                                    <div class="wrap">
+                                        <div class="image">
+                                            <picture width="397" height="295">
+                                                <img data-src="https://d.newsweek.com/en/full/1820191/george-osborne-taishan-nuclear-power-plant.jpg?w=397&amp;h=295&amp;f=37ed395d8e7ae08ff22a14766a5dea68" alt="" class="mapping-sm_md lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820191/george-osborne-taishan-nuclear-power-plant.jpg?w=397&amp;h=295&amp;f=37ed395d8e7ae08ff22a14766a5dea68" width="397" height="295">
+                                            </picture>
+                                            <div class="category">
+                                                <a href="#">CHINA</a>
+                                            </div>
+                                        </div>
+                                        <h3>
+                                            <a href="#">
+                                                China's Nuclear Leak Denial Evokes Chernobyl as Plant Insists It's Safe
+                                            </a>
+                                        </h3>
+                                        <div class="summary">
+                                            A French company that partly owns and helps operate the plant claimed the radiation limits were above French safety standards, CNN reported.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col edit-col">
+                                    <div class="wrap">
+                                        <div class="image">
+                                            <picture width="397" height="295">
+                                                <img data-src="https://d.newsweek.com/en/full/1816737/newsweek-expert-forum-members-share-industry-insights.png?w=397&amp;h=295&amp;f=02abcf03db0d1041de657dbadbd96a25" alt="" class="mapping-sm_md lazysize lazyloaded" src="https://d.newsweek.com/en/full/1816737/newsweek-expert-forum-members-share-industry-insights.png?w=397&amp;h=295&amp;f=02abcf03db0d1041de657dbadbd96a25" width="397" height="295">
+                                            </picture>
+                                        </div>
+                                        <h3>
+                                            <a href="#">
+                                                How to Avoid Fueling the Fires of Misinformation
+                                            </a>
+                                        </h3>
+                                        <div class="summary">
+                                            It's easier than ever to share information—which means leaders must take extra care to ensure that information spread throughout their company is factual.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col edit-col">
+                                    <div class="wrap">
+                                        <div class="image">
+                                            <picture width="397" height="295">
+                                                <img data-src="https://d.newsweek.com/en/full/1820127/joe-biden-sunglasses-queen-meeting.jpg?w=397&amp;h=295&amp;f=74e44ce483b09a7811c27e9edd322c65" alt="" class="mapping-sm_md lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820127/joe-biden-sunglasses-queen-meeting.jpg?w=397&amp;h=295&amp;f=74e44ce483b09a7811c27e9edd322c65" width="397" height="295">
+                                            </picture>
+                                            <div class="category">
+                                                <a href="#">QUEEN ELIZABETH II</a>
+                                            </div>
+                                        </div>
+                                        <h3>
+                                            <a href="#">
+                                                Joe Biden's Sunglasses Gaffe With Queen Continues a Presidential Tradition
+                                            </a>
+                                        </h3>
+                                        <div class="summary">
+                                            The president breached royal protocol by not removing his sunglasses to greet Queen Elizabeth II—here are some of the other U.S. presidents to slip up during a royal get together.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col edit-col">
+                                    <div class="wrap">
+                                    <div class="image">
+                                        <picture width="397" height="295">
+                                            <img data-src="https://d.newsweek.com/en/full/1820018/putin-biden.jpg?w=397&amp;h=295&amp;f=8bcfee7a84d83ce100f6bf87417c07dd" alt="" class="mapping-sm_md lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820018/putin-biden.jpg?w=397&amp;h=295&amp;f=8bcfee7a84d83ce100f6bf87417c07dd" width="397" height="295">
+                                        </picture>
+                                        <div class="category">
+                                            <a href="#">VLADIMIR PUTIN</a>
+                                        </div>
+                                    </div>
+                                    <h3>
+                                        <a href="#">
+                                            U.S. to 'Respond Forcefully' to Russia's 'Aggressive Actions': Blinken
+                                        </a>
+                                    </h3>
+                                    <div class="summary">
+                                        "The president is going to make clear to President Putin is that we seek a more stable, predictable relationship," the secretary of state said.
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="col edit-col">
+                                    <div class="wrap">
+                                        <div class="image">
+                                            <picture width="397" height="295">
+                                                <img data-src="https://d.newsweek.com/en/full/1820386/naftali-bennett-attends-knesset-session.jpg?w=397&amp;h=295&amp;f=6fdd2157c1120a7f98d1c287d3e83337" alt="" class="mapping-sm_md lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820386/naftali-bennett-attends-knesset-session.jpg?w=397&amp;h=295&amp;f=6fdd2157c1120a7f98d1c287d3e83337" width="397" height="295">
+                                            </picture>
+                                            <div class="category">
+                                                <a href="#">ISRAEL</a>
+                                            </div>
+                                        </div>
+                                        <h3>
+                                            <a href="#">
+                                                Naftali Bennett's Anti-Palestinian State Agenda Risks Joe Biden's Ire
+                                            </a>
+                                        </h3>
+                                        <div class="summary">
+                                            New Israeli Prime Minister Naftali Bennett has expressed gratitude towards former U.S. President Donald Trump's controversial policy record in the Middle East.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col edit-col">
+                                    <div class="wrap">
+                                        <div class="image">
+                                            <picture width="397" height="295">
+                                                <img data-src="https://d.newsweek.com/en/full/1820316/joe-biden-russia.jpg?w=397&amp;h=295&amp;f=ee31c867112ac6bd72880f21f7edb959" alt="" class="mapping-sm_md lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820316/joe-biden-russia.jpg?w=397&amp;h=295&amp;f=ee31c867112ac6bd72880f21f7edb959" width="397" height="295">
+                                            </picture>
+                                            <div class="category">
+                                                <a href="#">JOE BIDEN</a>
+                                            </div>
+                                        </div>
+                                        <h3>
+                                            <a href="#">
+                                                Biden Turns Heat on Russia's 'Aggressive Policies' Ahead of New NATO Plan
+                                            </a>
+                                        </h3>
+                                        <div class="summary">
+                                            The president is in Belgium as the 30-nation alliance hopes to reaffirm its unity and discuss fraught relations with Russia and China.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col edit-col">
+                                    <div class="wrap">
+                                        <div class="image">
+                                            <picture width="397" height="295">
+                                                <img data-src="https://d.newsweek.com/en/full/1820347/putin-dismisses-us-hacking-accusations.jpg?w=397&amp;h=295&amp;f=329e22d512309655b7e91252c2b84342" alt="" class="mapping-sm_md lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820347/putin-dismisses-us-hacking-accusations.jpg?w=397&amp;h=295&amp;f=329e22d512309655b7e91252c2b84342" width="397" height="295">
+                                            </picture>
+                                            <div class="category">
+                                                <a href="#">RUSSIA</a>
+                                            </div>
+                                        </div>
+                                        <h3>
+                                            <a href="#">
+                                                Putin: U.S. Has Never Provided Proof for Election, Cyberattack Accusations
+                                            </a>
+                                        </h3>
+                                        <div class="summary">
+                                            "We have been accused of all kinds of things," Putin said, "and not once, not once, not one time, did they bother to produce any kind of evidence or proof, just unfounded accusations."
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SECTION PICKS -->
+                    <div class="section-picks">
+                        <!-- SECTION 1 -->
+                        <div class="magazine-title d-flex justify-content-left align-items-center">
+                            <a href="#">U.S.</a>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 section-col" >
+                                <article>
+                                    <div class="image">
+                                        <picture width="397" height="265">
+                                            <img data-src="https://d.newsweek.com/en/full/1820560/human-smuggler-migrants-high-speed-car-crash.jpg?w=397&amp;h=265&amp;f=87e0859a6a11fbba3ce0ccd873acba3b" alt="" class="mapping-sm_lg lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820560/human-smuggler-migrants-high-speed-car-crash.jpg?w=397&amp;h=265&amp;f=87e0859a6a11fbba3ce0ccd873acba3b" width="397" height="265">
+                                        </picture>
+                                    </div>
+                                    <h4>
+                                        <a href="#">High-Speed Crash Leads to Arrest of an Alleged Human Smuggler</a>
+                                    </h4>
+                                </article>
+                            </div>
+                            <div class="col-sm-4 section-col">
+                                <article>
+                                    <div class="image">
+                                        <picture width="397" height="265">
+                                            <img data-src="https://d.newsweek.com/en/full/1820487/counter-protesters-demonstrate-against-white-lives-matter-rally.jpg?w=397&amp;h=265&amp;f=a7e5dc7eb9621f39eb2363632e8d307b" alt="" class="mapping-sm_lg lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820487/counter-protesters-demonstrate-against-white-lives-matter-rally.jpg?w=397&amp;h=265&amp;f=a7e5dc7eb9621f39eb2363632e8d307b" width="397" height="265">
+                                        </picture>
+                                    </div>
+                                    <h4>
+                                        <a href="#">Truck Flying Nazi Flag Spotted In California</a>
+                                    </h4>
+                                </article>
+                            </div>
+                            <div class="col-sm-4">
+                                <ul>
+                                    <li class="d-flex">
+                                        <div class="image">
+                                            <picture width="95" height="95">
+                                                <img data-src="https://d.newsweek.com/en/full/1820502/unknown-call-cell-phone.jpg?w=95&amp;h=95&amp;f=8ee5c753ac6b70526a301f91fafe0469" alt="" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820502/unknown-call-cell-phone.jpg?w=95&amp;h=95&amp;f=8ee5c753ac6b70526a301f91fafe0469" width="95" height="95">
+                                                <a href="#" class="zero"></a>
+                                            </picture>
+                                        </div>
+                                        <div class="info">
+                                            <a href="#">Man Exposes Scammer Who Promised $4.5 Million in Hilarious Video Call</a>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="image">
+                                            <picture width="95" height="95">
+                                                <img data-src="https://d.newsweek.com/en/full/1820555/archbishop-jose-gomez-online-service.jpg?w=95&amp;h=95&amp;f=e950e43c11a15b39b1ce5caa869ff49a" alt="" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820555/archbishop-jose-gomez-online-service.jpg?w=95&amp;h=95&amp;f=e950e43c11a15b39b1ce5caa869ff49a" width="95" height="95">
+                                                <a href="#" class="zero"></a>
+                                            </picture>
+                                        </div>
+                                        <div class="info">
+                                            <a href="#">Some Bishops Want to 'Embarrass' Biden With Communion Proposal: Professor</a>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="image">
+                                            <picture width="95" height="95">
+                                                <img data-src="https://d.newsweek.com/en/full/1820520/stock-image-bear-cubs.jpg?w=95&amp;h=95&amp;f=ddecb7edefd8cbbde18323332767487e" alt="" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820520/stock-image-bear-cubs.jpg?w=95&amp;h=95&amp;f=ddecb7edefd8cbbde18323332767487e" width="95" height="95">
+                                                <a href="#" class="zero"></a>
+                                            </picture>
+                                        </div>
+                                        <div class="info">
+                                            <a href="#">Trio of Bears Destroy Man's Yard As Cubs Smash Pots and Knock Over Chairs</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- SECTION 2 -->
+                        <div class="magazine-title d-flex justify-content-left align-items-center">
+                            <a href="#">World</a>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 section-col" >
+                                <article>
+                                    <div class="image">
+                                        <picture width="397" height="265">
+                                            <img data-src="https://d.newsweek.com/en/full/1820675/tedros.jpg?w=397&amp;h=265&amp;f=6ce314e6c91d963bd45c57e2a832368d" alt="" class="mapping-sm_lg lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820675/tedros.jpg?w=397&amp;h=265&amp;f=6ce314e6c91d963bd45c57e2a832368d" width="397" height="265">
+                                        </picture>
+                                    </div>
+                                    <h4>
+                                        <a href="#">WHO Director Asks Leaders to COVID Vaccinate 70% of Globe by Next G7 Summit</a>
+                                    </h4>
+                                </article>
+                            </div>
+                            <div class="col-sm-4 section-col">
+                                <article>
+                                    <div class="image">
+                                        <picture width="397" height="265">
+                                            <img data-src="https://d.newsweek.com/en/full/1820669/ukrainian-president-volodymyr-zelenskyy.jpg?w=397&amp;h=265&amp;f=d6981927374e492d8214432164909a58" alt="" class="mapping-sm_lg lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820669/ukrainian-president-volodymyr-zelenskyy.jpg?w=397&amp;h=265&amp;f=d6981927374e492d8214432164909a58" width="397" height="265">
+                                        </picture>
+                                    </div>
+                                    <h4>
+                                        <a href="#">Zelenskyy Hopes Biden Will Give 'Specific' Answer on Supporting NATO Bid</a>
+                                    </h4>
+                                </article>
+                            </div>
+                            <div class="col-sm-4">
+                                <ul>
+                                    <li class="d-flex">
+                                        <div class="image">
+                                            <picture width="95" height="95">
+                                                <img data-src="https://d.newsweek.com/en/full/1820514/wedding-philippines-2007.jpg?w=95&amp;h=95&amp;f=f2a87bbbbf1d6fed4c8f0b4e0f929fed" alt="" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820514/wedding-philippines-2007.jpg?w=95&amp;h=95&amp;f=f2a87bbbbf1d6fed4c8f0b4e0f929fed" width="95" height="95">
+                                                <a href="#" class="zero"></a>
+                                            </picture>
+                                        </div>
+                                        <div class="info">
+                                            <a href="#">Man Hides Under Bride's Wedding Dress to Help Her Walk Amid Strong Wind</a>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="image">
+                                            <picture width="95" height="95">
+                                                <img data-src="https://d.newsweek.com/en/full/1820521/taishan-nuclear-power-plant-china.jpg?w=95&amp;h=95&amp;f=1186324cc6821beb3ebdb4b1ad314859" alt="" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820521/taishan-nuclear-power-plant-china.jpg?w=95&amp;h=95&amp;f=1186324cc6821beb3ebdb4b1ad314859" width="95" height="95">
+                                                <a href="#" class="zero"></a>
+                                            </picture>
+                                        </div>
+                                        <div class="info">
+                                            <a href="#">U.N.'s Nuclear Watchdog: 'No Indication' Chinese Nuclear Plant Is Leaking</a>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="image">
+                                            <picture width="95" height="95">
+                                                <img data-src="https://d.newsweek.com/en/full/1820403/image-halo-around-sun.jpg?w=95&amp;h=95&amp;f=f6439afed744e5e84814bbb5343ae03b" alt="" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820403/image-halo-around-sun.jpg?w=95&amp;h=95&amp;f=f6439afed744e5e84814bbb5343ae03b" width="95" height="95">
+                                                <a href="#" class="zero"></a>
+                                            </picture>
+                                        </div>
+                                        <div class="info">
+                                            <a href="#">Skier Captures Incredible Weather Phenomenon the Rare 'Sun Dog' on Camera</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- SECTION 3 -->
+                        <div class="magazine-title d-flex justify-content-left align-items-center">
+                            <a href="#">Business</a>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 section-col" >
+                                <article>
+                                    <div class="image">
+                                        <picture width="397" height="265">
+                                            <img data-src="https://d.newsweek.com/en/full/1820033/joe-biden-kamala-harris-controversy.jpg?w=397&amp;h=265&amp;f=6492187a848fe4c0d61d51b5ef091e32" alt="" class="mapping-sm_lg lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820033/joe-biden-kamala-harris-controversy.jpg?w=397&amp;h=265&amp;f=6492187a848fe4c0d61d51b5ef091e32" width="397" height="265">
+                                        </picture>
+                                    </div>
+                                    <h4>
+                                        <a href="#">Amazon Criticized for Anti-Gun Control Products: 'F*** Joe and the Hoe'</a>
+                                    </h4>
+                                </article>
+                            </div>
+                            <div class="col-sm-4 section-col">
+                                <article>
+                                    <div class="image">
+                                        <picture width="397" height="265">
+                                            <img data-src="https://d.newsweek.com/en/full/1819650/poppy-seeds-palm.jpg?w=397&amp;h=265&amp;f=4101cdbb3238e921aee9bffc551e9feb" alt="" class="mapping-sm_lg lazysize lazyloaded" src="https://d.newsweek.com/en/full/1819650/poppy-seeds-palm.jpg?w=397&amp;h=265&amp;f=4101cdbb3238e921aee9bffc551e9feb" width="397" height="265">
+                                        </picture>
+                                    </div>
+                                    <h4>
+                                        <a href="#">Man Fails Drug Test for New Job After Eating Poppy Seed Bread</a>
+                                    </h4>
+                                </article>
+                            </div>
+                            <div class="col-sm-4">
+                                <ul>
+                                    <li class="d-flex">
+                                        <div class="image">
+                                            <picture width="95" height="95">
+                                                <img data-src="https://d.newsweek.com/en/full/1819584/one-hundred-dollar-bills.jpg?w=95&amp;h=95&amp;f=c76cbe0cceea1b9b6500b420062c764e" alt="" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1819584/one-hundred-dollar-bills.jpg?w=95&amp;h=95&amp;f=c76cbe0cceea1b9b6500b420062c764e" width="95" height="95">
+                                                <a href="#" class="zero"></a>
+                                            </picture>
+                                        </div>
+                                        <div class="info">
+                                            <a href="#">Median Workers Pay Climbed Just 2% in 2020 as Top-Paid CEOs Saw 14% Jump</a>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="image">
+                                            <picture width="95" height="95">
+                                                <img data-src="https://d.newsweek.com/en/full/1818637/business-uses-cow-poop-crypto-mining.jpg?w=95&amp;h=95&amp;f=eb7f2d2421697a741b7c24b04bc30573" alt="" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1818637/business-uses-cow-poop-crypto-mining.jpg?w=95&amp;h=95&amp;f=eb7f2d2421697a741b7c24b04bc30573" width="95" height="95">
+                                                <a href="#" class="zero"></a>
+                                            </picture>
+                                        </div>
+                                        <div class="info">
+                                            <a href="#">Man Makes Millions Using 'Cow Poop' to Run Cryptocurrency Mining Firm</a>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="image">
+                                            <picture width="95" height="95">
+                                                <img data-src="https://d.newsweek.com/en/full/1817884/nike-greek-goddess-victory-shoes.jpg?w=95&amp;h=95&amp;f=2813cca95810bfb881db8e1b93d0f223" alt="" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1817884/nike-greek-goddess-victory-shoes.jpg?w=95&amp;h=95&amp;f=2813cca95810bfb881db8e1b93d0f223" width="95" height="95">
+                                                <a href="#" class="zero"></a>
+                                            </picture>
+                                        </div>
+                                        <div class="info">
+                                            <a href="#">Nike Sneakers Face Recall as Company Spells Its Own Name Wrongly</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- SECTION 4 -->
+                        <div class="magazine-title d-flex justify-content-left align-items-center">
+                            <a href="#">Tech & Science</a>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 section-col" >
+                                <article>
+                                    <div class="image">
+                                        <picture width="397" height="265">
+                                            <img data-src="https://d.newsweek.com/en/full/1820443/dog-staffordshire-terrier-stock-getty.jpg?w=397&amp;h=265&amp;f=427acca4d7628ba73a7824cbaf464161" alt="" class="mapping-sm_lg lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820443/dog-staffordshire-terrier-stock-getty.jpg?w=397&amp;h=265&amp;f=427acca4d7628ba73a7824cbaf464161" width="397" height="265">
+                                        </picture>
+                                    </div>
+                                    <h4>
+                                        <a href="#">Puppy With Rattling Belly Ate Dozens of Pebbles During Beach Trip</a>
+                                    </h4>
+                                </article>
+                            </div>
+                            <div class="col-sm-4 section-col">
+                                <article>
+                                    <div class="image">
+                                        <picture width="397" height="265">
+                                            <img data-src="https://d.newsweek.com/en/full/1820458/scarface-lion.jpg?w=397&amp;h=265&amp;f=0c394310da9db046865ff7cdc9d9ec3d" alt="" class="mapping-sm_lg lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820458/scarface-lion.jpg?w=397&amp;h=265&amp;f=0c394310da9db046865ff7cdc9d9ec3d" width="397" height="265">
+                                        </picture>
+                                    </div>
+                                    <h4>
+                                        <a href="#">Kenya's 'Legendary' Scarface Lion Found Dead in Important Conservation Area</a>
+                                    </h4>
+                                </article>
+                            </div>
+                            <div class="col-sm-4">
+                                <ul>
+                                    <li class="d-flex">
+                                        <div class="image">
+                                            <picture width="95" height="95">
+                                                <img data-src="https://d.newsweek.com/en/full/1820327/planets.jpg?w=95&amp;h=95&amp;f=90acead1275580d231b4b0f300c0181a" alt="" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820327/planets.jpg?w=95&amp;h=95&amp;f=90acead1275580d231b4b0f300c0181a" width="95" height="95">
+                                                <a href="#" class="zero"></a>
+                                            </picture>
+                                        </div>
+                                        <div class="info">
+                                            <a href="#">Dad Who Helped NASA Discover New Planets Nurtures Son's Interest in Space</a>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="image">
+                                            <picture width="95" height="95">
+                                                <img data-src="https://d.newsweek.com/en/full/1820340/minotaur-i-rocket-wallops-facility.jpg?w=95&amp;h=95&amp;f=245ef77bc70f6451772e393d8a81db41" alt="" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820340/minotaur-i-rocket-wallops-facility.jpg?w=95&amp;h=95&amp;f=245ef77bc70f6451772e393d8a81db41" width="95" height="95">
+                                                <a href="#" class="zero"></a>
+                                            </picture>
+                                        </div>
+                                        <div class="info">
+                                            <a href="#">How to Watch Rocket Launch From NASA's Wallops Virginia Flight Facility</a>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="image">
+                                            <picture width="95" height="95">
+                                                <img data-src="https://d.newsweek.com/en/full/1820195/bitcoin-logo.jpg?w=95&amp;h=95&amp;f=363eac24e0b383cd4556eff188331b93" alt="" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820195/bitcoin-logo.jpg?w=95&amp;h=95&amp;f=363eac24e0b383cd4556eff188331b93" width="95" height="95">
+                                                <a href="#" class="zero"></a>
+                                            </picture>
+                                        </div>
+                                        <div class="info">
+                                            <a href="#">Shiba Inu Crypto Price Update Amid Calls for Robinhood to List It</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- SECTION 5 -->
+                        <div class="magazine-title d-flex justify-content-left align-items-center">
+                            <a href="#">Culture</a>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 section-col" >
+                                <article>
+                                    <div class="image">
+                                        <picture width="397" height="265">
+                                            <img data-src="https://d.newsweek.com/en/full/1820504/corinna-kopf.jpg?w=397&amp;h=265&amp;f=a6e1ceb7a94f88995a2b330f6071aa4f" alt="" class="mapping-sm_lg lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820504/corinna-kopf.jpg?w=397&amp;h=265&amp;f=a6e1ceb7a94f88995a2b330f6071aa4f" width="397" height="265">
+                                        </picture>
+                                    </div>
+                                    <h4>
+                                        <a href="#">Corinna Kopf Blasted for Tweets About Minors Leaking OnlyFans Pics</a>
+                                    </h4>
+                                </article>
+                            </div>
+                            <div class="col-sm-4 section-col">
+                                <article>
+                                    <div class="image">
+                                        <picture width="397" height="265">
+                                            <img data-src="https://d.newsweek.com/en/full/1820501/pride-flag-waving-wind.jpg?w=397&amp;h=265&amp;f=1d90bac83351360d1c2c7edb80e29173" alt="" class="mapping-sm_lg lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820501/pride-flag-waving-wind.jpg?w=397&amp;h=265&amp;f=1d90bac83351360d1c2c7edb80e29173" width="397" height="265">
+                                        </picture>
+                                    </div>
+                                    <h4>
+                                        <a href="#">Dad Puts Pride Flags in Garden to Help Neighbor, 73, Who Recently Came Out</a>
+                                    </h4>
+                                </article>
+                            </div>
+                            <div class="col-sm-4">
+                                <ul>
+                                    <li class="d-flex">
+                                        <div class="image">
+                                            <picture width="95" height="95">
+                                                <img data-src="https://d.newsweek.com/en/full/1820437/paris-jackson-got-candid-paparazzi-attention.jpg?w=95&amp;h=95&amp;f=cf2b189ad2a28c294e3aab8160cb1fab" alt="" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820437/paris-jackson-got-candid-paparazzi-attention.jpg?w=95&amp;h=95&amp;f=cf2b189ad2a28c294e3aab8160cb1fab" width="95" height="95">
+                                                <a href="#" class="zero"></a>
+                                            </picture>
+                                        </div>
+                                        <div class="info">
+                                            <a href="#">Paris Jackson Says Paparazzi Attention at Young Age Caused Hallucinations</a>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="image">
+                                            <picture width="95" height="95">
+                                                <img data-src="https://d.newsweek.com/en/full/1820480/dakota-fear-walking-dead.jpg?w=95&amp;h=95&amp;f=bb93a12a309617cf5a7b5226ea3314b1" alt="" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820480/dakota-fear-walking-dead.jpg?w=95&amp;h=95&amp;f=bb93a12a309617cf5a7b5226ea3314b1" width="95" height="95">
+                                                <a href="#" class="zero"></a>
+                                            </picture>
+                                        </div>
+                                        <div class="info">
+                                            <a href="#">Who Played Dakota on 'FTWD' and Why Her Finale Twist Happened</a>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="image">
+                                            <picture width="95" height="95">
+                                                <img data-src="https://d.newsweek.com/en/full/1818996/lin-manuel-miranda-quira-alegria-hudes.jpg?w=95&amp;h=95&amp;f=5a406c9fc5f5716c7f0166c693e81d43" alt="" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1818996/lin-manuel-miranda-quira-alegria-hudes.jpg?w=95&amp;h=95&amp;f=5a406c9fc5f5716c7f0166c693e81d43" width="95" height="95">
+                                                <a href="#" class="zero"></a>
+                                            </picture>
+                                        </div>
+                                        <div class="info">
+                                            <a href="#">'In The Heights' Criticized For Lack of Afro-Latinx Representation</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- SECTION 6 -->
+                        <div class="magazine-title d-flex justify-content-left align-items-center">
+                            <a href="#">Sports</a>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 section-col" >
+                                <article>
+                                    <div class="image">
+                                        <picture width="397" height="265">
+                                            <img data-src="https://d.newsweek.com/en/full/1820135/message-support-christian-eriksen.jpg?w=397&amp;h=265&amp;f=c377cd071c9988656a16003905a6a4ca" alt="" class="mapping-sm_lg lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820135/message-support-christian-eriksen.jpg?w=397&amp;h=265&amp;f=c377cd071c9988656a16003905a6a4ca" width="397" height="265">
+                                        </picture>
+                                    </div>
+                                    <h4>
+                                        <a href="#">Christian Eriksen Issues Public Message After Cardiac Arrest at Euro 2020</a>
+                                    </h4>
+                                </article>
+                            </div>
+                            <div class="col-sm-4 section-col">
+                                <article>
+                                    <div class="image">
+                                        <picture width="397" height="265">
+                                            <img data-src="https://d.newsweek.com/en/full/1820114/devin-booker-phoenix-suns.jpg?w=397&amp;h=265&amp;f=b771e024b3a0111dc8b53567ec0d05c3" alt="" class="mapping-sm_lg lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820114/devin-booker-phoenix-suns.jpg?w=397&amp;h=265&amp;f=b771e024b3a0111dc8b53567ec0d05c3" width="397" height="265">
+                                        </picture>
+                                    </div>
+                                    <h4>
+                                        <a href="#">Meet Kendal Jenner's Boyfriend and NBA Star Devin Booker</a>
+                                    </h4>
+                                </article>
+                            </div>
+                            <div class="col-sm-4">
+                                <ul>
+                                    <li class="d-flex">
+                                        <div class="image">
+                                            <picture width="95" height="95">
+                                                <img data-src="https://d.newsweek.com/en/full/1820098/north-carolina-state-baseball.jpg?w=95&amp;h=95&amp;f=9fc857c5ec1172238d36edc449f0650e" alt="" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820098/north-carolina-state-baseball.jpg?w=95&amp;h=95&amp;f=9fc857c5ec1172238d36edc449f0650e" width="95" height="95">
+                                                <a href="#" class="zero"></a>
+                                            </picture>
+                                        </div>
+                                        <div class="info">
+                                            <a href="#">N.C. State Beating Arkansas in Super Regional Bigger Than 1983 Final Four</a>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="image">
+                                            <picture width="95" height="95">
+                                                <img data-src="https://d.newsweek.com/en/full/1820094/us-diver-tyler-downs.jpg?w=95&amp;h=95&amp;f=cd6cff48fa7524f5138c223f986c52c5" alt="" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1820094/us-diver-tyler-downs.jpg?w=95&amp;h=95&amp;f=cd6cff48fa7524f5138c223f986c52c5" width="95" height="95">
+                                                <a href="#" class="zero"></a>
+                                            </picture>
+                                        </div>
+                                        <div class="info">
+                                            <a href="#">17-Year-Old Tyler Downs Wins Olympic 3-Meter Diving Trials, Headed to Tokyo</a>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="image">
+                                            <picture width="95" height="95">
+                                                <img data-src="https://d.newsweek.com/en/full/1819959/neymar-playing-brazil.jpg?w=95&amp;h=95&amp;f=7f8f3ae0cae11beccdce90b64c549d91" alt="" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1819959/neymar-playing-brazil.jpg?w=95&amp;h=95&amp;f=7f8f3ae0cae11beccdce90b64c549d91" width="95" height="95">
+                                                <a href="#" class="zero"></a>
+                                            </picture>
+                                        </div>
+                                        <div class="info">
+                                            <a href="#">The Favorites to Win Copa America 2021 Revealed</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- SECTION 7 -->
+                        <div class="magazine-title d-flex justify-content-left align-items-center">
+                            <a href="#">Newsweek Expert Forum</a>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 section-col" >
+                                <article>
+                                    <div class="image">
+                                        <picture width="397" height="265">
+                                            <img data-src="https://d.newsweek.com/en/full/1702746/newsweek-expert-forum.png?w=397&amp;h=265&amp;f=c8709c236c7800d2c05ae43ad50f2094" alt="" class="mapping-sm_lg lazysize lazyloaded" src="https://d.newsweek.com/en/full/1702746/newsweek-expert-forum.png?w=397&amp;h=265&amp;f=c8709c236c7800d2c05ae43ad50f2094" width="397" height="265">
+                                        </picture>
+                                    </div>
+                                    <h4>
+                                        <a href="#">Newsweek Announces Launch of the Newsweek Expert Forum</a>
+                                    </h4>
+                                </article>
+                            </div>
+                            <div class="col-sm-4 section-col">
+                                <article>
+                                    <div class="image">
+                                        <picture width="397" height="265">
+                                            <img data-src="https://d.newsweek.com/en/full/1818824/person-working-remotely.jpg?w=397&amp;h=265&amp;f=3c416a121f751bff2039d523857fcc7c" alt="" class="mapping-sm_lg lazysize lazyloaded" src="https://d.newsweek.com/en/full/1818824/person-working-remotely.jpg?w=397&amp;h=265&amp;f=3c416a121f751bff2039d523857fcc7c" width="397" height="265">
+                                        </picture>
+                                    </div>
+                                    <h4>
+                                        <a href="#">The Rise of "Experiential Employment" and How Employers Must Adjust</a>
+                                    </h4>
+                                </article>
+                            </div>
+                            <div class="col-sm-4">
+                                <ul>
+                                    <li class="d-flex">
+                                        <div class="image">
+                                            <picture width="95" height="95">
+                                                <img data-src="https://d.newsweek.com/en/full/1818814/someone-giving-presentation.jpg?w=95&amp;h=95&amp;f=b9be6bf49e29831aea0dc563f0e9eb98" alt="" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1818814/someone-giving-presentation.jpg?w=95&amp;h=95&amp;f=b9be6bf49e29831aea0dc563f0e9eb98" width="95" height="95">
+                                                <a href="#" class="zero"></a>
+                                            </picture>
+                                        </div>
+                                        <div class="info">
+                                            <a href="#">Before you launch a marketing campaign, define your core values</a>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="image">
+                                            <picture width="95" height="95">
+                                                <img data-src="https://d.newsweek.com/en/full/1731732/newsweek-expert-forum-members-share-industry-insights.jpg?w=95&amp;h=95&amp;f=42086c92e61f8103a4e4842f2188c8a9" alt="" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1731732/newsweek-expert-forum-members-share-industry-insights.jpg?w=95&amp;h=95&amp;f=42086c92e61f8103a4e4842f2188c8a9" width="95" height="95">
+                                                <a href="#" class="zero"></a>
+                                            </picture>
+                                        </div>
+                                        <div class="info">
+                                            <a href="#">15 Effective Ways to Strengthen and Enforce Core Company Values</a>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="image">
+                                            <picture width="95" height="95">
+                                                <img data-src="https://d.newsweek.com/en/full/1818809/family-business.jpg?w=95&amp;h=95&amp;f=43d75b179cc98941091159f01cdfa57c" alt="" class="mapping-sm_thumb lazysize lazyloaded" src="https://d.newsweek.com/en/full/1818809/family-business.jpg?w=95&amp;h=95&amp;f=43d75b179cc98941091159f01cdfa57c" width="95" height="95">
+                                                <a href="#" class="zero"></a>
+                                            </picture>
+                                        </div>
+                                        <div class="info">
+                                            <a href="#">Family Business in the Time of Pandemic</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SUBSCRIBE -->
+                    <div class="subscribe-block">
+                        <div class="d-flex row">
+                            <div class="col-md-7 col-lg-8 d-md-flex flex-column">
+                                <div class="magazine-title d-flex justify-content-left align-items-center">
+                                    <a href="#">SUBSCRIBE</a>
+                                </div>
+                                <div class="left-column d-flex align-items-center">
+                                    <div class="image d-flex">
+                                        <div class="mag-thumb prev">
+                                            <img data-src="https://d.newsweek.com/en/full/1807185/cover-june-04-11-2021.jpg?w=170&amp;q=95&amp;f=f217fc1fad417c2b34bb28065fe1bb35" alt="" class="lazyloaded" src="https://d.newsweek.com/en/full/1807185/cover-june-04-11-2021.jpg?w=170&amp;q=95&amp;f=f217fc1fad417c2b34bb28065fe1bb35">
+                                        </div>
+                                        <div class="mag-thumb current">
+                                            <img data-src="https://d.newsweek.com/en/full/1816683/cover-june-18-25-2021.jpg?w=170&amp;q=95&amp;f=a158956a0d88d730c47a6f2123c71da3" alt="" class="lazyloaded" src="https://d.newsweek.com/en/full/1816683/cover-june-18-25-2021.jpg?w=170&amp;q=95&amp;f=a158956a0d88d730c47a6f2123c71da3">
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h3>
+                                            In-depth Stories You Don't See Elsewhere About Topics You Want to Read!
+                                        </h3>
+                                        <p>
+                                            All Access + Weekly Delivery.
+                                            <br>
+                                            Choose A Membership That's Perfect for You!
+                                        </p>
+                                        <button class="subscribe-btn d-flex align-items-start">
+                                            SUBSCRIBE
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-lg-4 d-flex flex-column">
+                                <div class="magazine-title d-flex justify-content-left align-items-center">
+                                    <a href="#">NEWSLETTER</a>
+                                </div>
+                                <div class="right-column d-flex">
+                                    <div class="image"></div>
+                                    <div class="info">
+                                        <h3>Best of Newsweek via email</h3>
+                                        <p>Daily news headlines & detailed briefings enjoyed by half a million readers.</p>
+                                        <form action="#" class="free-signup">
+                                            <label for="sub-email" class="signup-label">Email address</label>
+                                            <input type="text" placeholder="Email address" class="signup-input">
+                                            <input type="text" type="submit" value="" class="form-submit">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div><!-- Row End -->
+                </div><!-- Container End -->
+            </section>
+        </main>
+        <!-- FOOTER -->
+        <footer id="footer" class="container-fluid">
+            <div class="d-flex justify-content-between align-items-end">
+                <div class="d-flex align-items-end">
+                    <a href="#" class="brand">
+                        <svg width="396" height="60" x="0px" y="0px" viewBox="0 0 396 60">
+                            <g>
+                                <path d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"></path>
+                            </g>
+                        </svg>
+                    </a>
+                    <p class="copyright">© 2021 NEWSWEEK DIGITAL LLC</p>
+                </div>
+                <ul class="social d-flex align-items-end">
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-links d-flex flex-wrap">
+                <div class="edition d-flex">
+                    <div class="edition-title">
+                        <strong>Editions:</strong>
+                    </div>
+                    <ul class="footer-list d-flex">
+                        <li><a href="#">U.S Edition</a></li>
+                        <li><a href="#">日本</a></li>
+                        <li><a href="#">Pakistan</a></li>
+                        <li><a href="#">Polska</a></li>
+                        <li><a href="#">România</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-menu">
+                    <ul class="footer-list d-flex flex-wrap">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Announcements</a></li>
+                        <li><a href="#">Archive</a></li>
+                        <li><a href="#">Corrections</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Editorial Guidelines</a></li>
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Copyright</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Terms of Sale</a></li>
+                        <li><a href="#">Do Not Sell My Personal Information</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
